@@ -1,0 +1,24 @@
+// TODO add your handling code here:
+        //---Declaracion de Variables
+        double Lado;
+        double Area;
+        String Texto;
+        
+        //---Leer lado del cuadrado
+        Lado = Double.parseDouble(txtLado.getText());
+         //---Calcular el Area del Cuadrado
+         Area = Lado * Lado;
+         
+         //--Escribir el Area del Cuadrado
+         txtResultado.setText(String.valueOf(Area));
+         
+         Texto = "Lado" + String.valueOf(Lado)+" Area="+String.valueOf(Area)+ "\n";
+         atxResultado.append(Texto);
+         
+         
+    }                                           
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        System.exit(0);
+    }                                        
